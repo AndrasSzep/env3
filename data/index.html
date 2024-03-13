@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ENV3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+
+<body>
+    <div class="topnav">
+        <h1><span id="chipid"> Andras</span></h1>
+    </div>
+    <div class="content">
+        <div class="card-grid">
+            <div class="card">
+                <canvas id="tempchart"></canvas>
+                <p class="card-title">Temperature</p>
+                <p class="state"><span id="airtemp">21</span>&deg;C</p>
+            </div>
+            <div class="card">
+                <canvas id="humchart"></canvas>
+                <p class="card-title">Humidity</p>
+                <p class="state"><span id="humidity">22</span>&percnt;</p>
+            </div>
+            <div class="card">
+                <canvas id="preschart"></canvas>
+                <p class="card-title">Pressure</p>
+                <p class="state"><span id="pressure">760</span>mm</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html
