@@ -22,26 +22,25 @@ SOFTWARE.
  */
 /*
 This is an AI (chatGPT) assisted development for
-Arduino ESP32 code to display data from NMEA2000 data bus.
-https://shop.m5stack.com/products/atom-canbus-kit-ca-is3050g
+Arduino ESP32 code to display data 
 through a webserver to be seen on any mobile device for free.
 
-::::: Websockets used to autoupdate the data.
+::::: Websockets are used to auto-update the data.
 
-::::: Environmental sensors incorporated and data for the last 24hours stored respectively
+::::: Environmental sensors incorporated and data for the last 24 hours stored respectively
 in the SPIFFS files /pressure.txt, /temperature.txt, /humidity.txt.
-The historical environmental data displayed in the background as charts using https://www.chartjs.org
+The historical environmental data is displayed in the background as charts using https://www.chartjs.org
 
 ::::: Local WiFi attributes are stored at SPIFFS in files named /ssid.txt and /password.txt = see initWiFi()
-WPS never been tested but assume working.
+WPS never been tested but assumed working.
 
 ::::: Implemented OverTheAir update of the data files as well as the code itself on port 8080
 (i.e. http://env3.local:8080 ) see config.h .
-*** Arduino IDE 2.0 does not support file upload, this makes much simplier uploading updates
-especially in the client and stored data files.
+*** Arduino IDE 2.0 does not support file upload, this makes it much simpler to upload updates
+, especially in the client and stored data files.
 
 ToDo:
-::::: LED lights on M5Atom. Still need some ideas of colors and blinking signals
+::::: LED lights on M5Atom. Still need some ideas for colors and blinking signals
 */
 
 #include "include.h"
